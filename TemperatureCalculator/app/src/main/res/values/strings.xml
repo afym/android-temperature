@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TemperatureCalculator</string>
+    <string name="launcher_title">Temperature Converter</string>
+    <string name="launcher_icon">temperature_icon</string>
+    <string name="temperature_final">Final temperature</string>
+    <string name="temperature_hint_initial">Enter a temperature value</string>
+    <string name="temperature_hint_final">Push convert to see result</string>
+    <string name="temperature_alert_title">Scale error</string>
+    <string name="temperature_alert_title_ws">Service message</string>
+    <string name="temperature_alert_title_net">Network error</string>
+    <string name="temperature_alert_message_ws">Some error happens!</string>
+    <string name="temperature_alert_message">The scales must be different</string>
+    <string name="temperature_alert_message_net">There is not network!</string>
+    <string name="temperature_loader_message">Loading ...</string>
+</resources>

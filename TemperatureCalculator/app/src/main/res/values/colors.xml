@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base colors -->
+    <color name="colorPrimary">#ea9d19</color>
+    <color name="colorPrimaryDark">#ea9d19</color>
+    <color name="colorAccent">#ea9d19</color>
+    <!-- Background colors-->
+    <color name="endBackgroundColor">#ecb75d</color>
+    <color name="centerBackgroundColor">#ecb350</color>
+    <color name="startBackgroundColor">#ea9d19</color>
+    <!-- Text colors -->
+    <color name="whiteColor">#ffffff</color>
+    <color name="errorColor">#f51717</color>
+</resources>

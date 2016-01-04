@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="launcher_width">250dp</dimen>
+    <dimen name="launcher_height">250dp</dimen>
+    <dimen name="launcher_text_size">40sp</dimen>
+    <dimen name="activity_general_padding">16dp</dimen>
+    <dimen name="activity_general_bottom_margin">20dp</dimen>
+    <dimen name="activity_general_text_size">20sp</dimen>
+</resources>

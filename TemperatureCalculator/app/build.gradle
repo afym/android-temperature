@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.0"
+    // configuracion por defecto
+    defaultConfig {
+        applicationId "com.github.afym"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    // Configuraciones de acuerdo a tipo de construccion
+    buildTypes {
+        debug{
+            resValue "string", "ws_service_host", "http://192.168.1.40:54823/"
+            resValue "string", "ws_service_contract", "TemperatureConversion.svc"
+            resValue "string", "ws_temperature_operation_ftc", "FahrenheitToCelsius"
+            resValue "string", "ws_temperature_operation_ftk", "FahrenheitToKelvin"
+            resValue "string", "ws_temperature_operation_ctf", "CelsiusToFahrenheit"
+            resValue "string", "ws_temperature_operation_ctk", "CelsiusToKelvin"
+            resValue "string", "ws_temperature_operation_ktf", "KelvinToFahrenheit"
+            resValue "string", "ws_temperature_operation_ktc", "KelvinToCelcius"
+        }
+        release {
+            resValue "string", "ws_service_host", "https://services.mycompany.com.pe/"
+            resValue "string", "ws_service_contract", "TemperatureConversion.svc"
+            resValue "string", "ws_temperature_operation_ftc", "FahrenheitToCelsius"
+            resValue "string", "ws_temperature_operation_ftk", "FahrenheitToKelvin"
+            resValue "string", "ws_temperature_operation_ctf", "CelsiusToFahrenheit"
+            resValue "string", "ws_temperature_operation_ctk", "CelsiusToKelvin"
+            resValue "string", "ws_temperature_operation_ktf", "KelvinToFahrenheit"
+            resValue "string", "ws_temperature_operation_ktc", "KelvinToCelcius"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    // Dependencias utilocadas en el proyecto
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.github.kevinsawicki:http-request:6.0'
+    compile 'com.google.code.gson:gson:2.3.1'
+}
